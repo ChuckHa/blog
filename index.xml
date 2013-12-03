@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent Content on  </title>
+    <link>/index.xml</link>
+    <language>en-us</language>
+    <author>Chuck Ha</author>
+    <rights>Copyright (c) 2013, Chuck Ha; all rights reserved.</rights>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Odds In Our Favor</title>
+      <link>/portfolio/oddsinourfavor</link>
+      <pubDate>Tue, 03 Dec 2013 00:00:00 UTC</pubDate>
+      <author>Chuck Ha</author>
+      <guid>/portfolio/oddsinourfavor</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/static/img/portfolio/oiof_top.png&#34; alt=&#34;top of the website&#34; /&gt;
+
+&lt;img src=&#34;/static/img/portfolio/oiof_bottom.png&#34; alt=&#34;bottom of the website&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I worked with the &lt;a href=&#34;http://thehpalliance.org/&#34;&gt;Harry Potter Alliance&lt;/a&gt; to implement their vision of
+a website to help spread their message. I worked closely with their designer
+to get a working product that fulfilled their requirements. We discussed what
+exactly they wanted out of this product and I translated their needs into
+a site that was tailored specifically to them.&lt;/p&gt;
+
+&lt;p&gt;The part that you don&amp;rsquo;t see in the screen shots is the admin section. This
+was the most complicated piece of the application. Admins could verify that
+images were appropriate to be displayed on the front page. They were also
+able to delete images based off of a URL and generate CSV reports of users
+that had submitted content to the site.&lt;/p&gt;
+
+&lt;p&gt;This website was written entirely in &lt;a href=&#34;http://golang.org/&#34;&gt;Go&lt;/a&gt; and uses &lt;a href=&#34;http://mongodb.org/&#34;&gt;mongodb&lt;/a&gt; for a
+data store. The image processing is a custom thumbnail library I built and
+plan to release as an open source project.&lt;/p&gt;
+
+&lt;p&gt;At its peak, this site received almost 200,000 hits in a 12 hour period.
+Nothing huge, but that load will make any mistakes in the code very obvious.
+At first, the server was holding onto too many connections, but once I fixed
+that bug, there has been no downtime since. Average response times are about
+50ms and time to DOMLoaded (on my machine) is about 300ms.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>goenv</title>
+      <link>/project/goenv</link>
+      <pubDate>Tue, 03 Dec 2013 00:00:00 UTC</pubDate>
+      <author>Chuck Ha</author>
+      <guid>/project/goenv</guid>
+      <description>&lt;p&gt;This is a simple bash script I wrote to help manage Go workspaces.&lt;/p&gt;
+
+&lt;p&gt;To learn more, please see my blog post on the subject of &lt;a href=&#34;/post/gopath&#34;&gt;using GOPATH effectively&lt;/a&gt;
+and take a look at the project README on &lt;a href=&#34;https://github.com/chuckha/goenv&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using $GOPATH effectively.</title>
+      <link>/post/gopath</link>
+      <pubDate>Mon, 02 Dec 2013 00:00:00 UTC</pubDate>
+      <author>Chuck Ha</author>
+      <guid>/post/gopath</guid>
+      <description>&lt;p&gt;Using &lt;code&gt;$GOPATH&lt;/code&gt; effectively can be confusing at first. If you follow guides on &lt;a href=&#34;http://golang.org&#34;&gt;golang.org&lt;/a&gt; you&amp;rsquo;ll
+end up with way too many packages and dependency confusion in &lt;code&gt;$HOME/go/src&lt;/code&gt;. This is the
+exact same problem new Python developers have before someone tells them about &lt;a href=&#34;http://www.virtualenv.org/en/latest/&#34;&gt;virtualenv&lt;/a&gt;. You end up
+making a mess out of the system Python and use &lt;code&gt;sudo easy_install&lt;/code&gt; way too much.&lt;/p&gt;
+
+&lt;p&gt;However, we can ignore some of the fancy features that virtualenv provides. For instance, it
+doesn&amp;rsquo;t usually make sense to have different versions for Go unless you&amp;rsquo;re working on the
+language itself, in which case you probably know what you&amp;rsquo;re doing. All we really care about
+is having &lt;code&gt;go install&lt;/code&gt; put packages in the right place and not clobber or clutter anything.&lt;/p&gt;
+
+&lt;p&gt;Since all we are doing is modifying the environment to get a new Go workspace, I wrote a
+&lt;a href=&#34;https://github.com/chuckha/goenv&#34;&gt;simple bash script&lt;/a&gt; that does this for you. It creates the necessary directories for a Go
+workspace (&lt;code&gt;pkg&lt;/code&gt;, &lt;code&gt;src&lt;/code&gt;, &lt;code&gt;bin&lt;/code&gt;), modifies the &lt;code&gt;$GOPATH&lt;/code&gt; and &lt;code&gt;$PATH&lt;/code&gt; variables and that&amp;rsquo;s it.&lt;/p&gt;
+
+&lt;p&gt;There are two versions, one spawns a subshell with these updated variables, found on the branch
+&lt;a href=&#34;https://github.com/chuckha/goenv/tree/inve&#34;&gt;inve&lt;/a&gt; based on a gist about how &lt;a href=&#34;https://gist.github.com/datagrok/2199506&#34;&gt;virtualenv is doing it wrong&lt;/a&gt; and one that I find a bit
+more pleasant to use that you have to &lt;code&gt;source&lt;/code&gt; and modify the current shell environment.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

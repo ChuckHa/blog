@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on  </title>
+    <link>/project.xml</link>
+    <language>en-us</language>
+    <author>Chuck Ha</author>
+    <rights>Copyright (c) 2013, Chuck Ha; all rights reserved.</rights>
+    <updated>2013-12-03 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>goenv</title>
+      <link>/project/goenv</link>
+      <pubDate>Tue, 03 Dec 2013 00:00:00 UTC</pubDate>
+      <author>Chuck Ha</author>
+      <guid>/project/goenv</guid>
+      <description>&lt;p&gt;This is a simple bash script I wrote to help manage Go workspaces.&lt;/p&gt;
+
+&lt;p&gt;To learn more, please see my blog post on the subject of &lt;a href=&#34;/post/gopath&#34;&gt;using GOPATH effectively&lt;/a&gt;
+and take a look at the project README on &lt;a href=&#34;https://github.com/chuckha/goenv&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

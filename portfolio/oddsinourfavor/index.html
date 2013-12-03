@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css" media="screen" />
+  </head>
+  <body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/portfolio/">Portfolio</a></li>
+      <li><a href="/post/">Blog</a></li>
+      <li><a href="/project/">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="content">
+<h1>Odds In Our Favor</h1>
+<hr />
+<p><img src="/static/img/portfolio/oiof_top.png" alt="top of the website" />
+
+<img src="/static/img/portfolio/oiof_bottom.png" alt="bottom of the website" />
+</p>
+
+<p>I worked with the <a href="http://thehpalliance.org/">Harry Potter Alliance</a> to implement their vision of
+a website to help spread their message. I worked closely with their designer
+to get a working product that fulfilled their requirements. We discussed what
+exactly they wanted out of this product and I translated their needs into
+a site that was tailored specifically to them.</p>
+
+<p>The part that you don&rsquo;t see in the screen shots is the admin section. This
+was the most complicated piece of the application. Admins could verify that
+images were appropriate to be displayed on the front page. They were also
+able to delete images based off of a URL and generate CSV reports of users
+that had submitted content to the site.</p>
+
+<p>This website was written entirely in <a href="http://golang.org/">Go</a> and uses <a href="http://mongodb.org/">mongodb</a> for a
+data store. The image processing is a custom thumbnail library I built and
+plan to release as an open source project.</p>
+
+<p>At its peak, this site received almost 200,000 hits in a 12 hour period.
+Nothing huge, but that load will make any mistakes in the code very obvious.
+At first, the server was holding onto too many connections, but once I fixed
+that bug, there has been no downtime since. Average response times are about
+50ms and time to DOMLoaded (on my machine) is about 300ms.</p>
+
+<hr />
+</div>
+  </body>
+</html>
+

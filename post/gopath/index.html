@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css" media="screen" />
+  </head>
+  <body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/portfolio/">Portfolio</a></li>
+      <li><a href="/post/">Blog</a></li>
+      <li><a href="/project/">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="content">
+<h1>Using $GOPATH effectively.</h1>
+<hr />
+<p>Using <code>$GOPATH</code> effectively can be confusing at first. If you follow guides on <a href="http://golang.org">golang.org</a> you&rsquo;ll
+end up with way too many packages and dependency confusion in <code>$HOME/go/src</code>. This is the
+exact same problem new Python developers have before someone tells them about <a href="http://www.virtualenv.org/en/latest/">virtualenv</a>. You end up
+making a mess out of the system Python and use <code>sudo easy_install</code> way too much.</p>
+
+<p>However, we can ignore some of the fancy features that virtualenv provides. For instance, it
+doesn&rsquo;t usually make sense to have different versions for Go unless you&rsquo;re working on the
+language itself, in which case you probably know what you&rsquo;re doing. All we really care about
+is having <code>go install</code> put packages in the right place and not clobber or clutter anything.</p>
+
+<p>Since all we are doing is modifying the environment to get a new Go workspace, I wrote a
+<a href="https://github.com/chuckha/goenv">simple bash script</a> that does this for you. It creates the necessary directories for a Go
+workspace (<code>pkg</code>, <code>src</code>, <code>bin</code>), modifies the <code>$GOPATH</code> and <code>$PATH</code> variables and that&rsquo;s it.</p>
+
+<p>There are two versions, one spawns a subshell with these updated variables, found on the branch
+<a href="https://github.com/chuckha/goenv/tree/inve">inve</a> based on a gist about how <a href="https://gist.github.com/datagrok/2199506">virtualenv is doing it wrong</a> and one that I find a bit
+more pleasant to use that you have to <code>source</code> and modify the current shell environment.</p>
+
+<hr />
+</div>
+  </body>
+</html>
+

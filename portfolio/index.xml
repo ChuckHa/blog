@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolios on  </title>
+    <link>/portfolio.xml</link>
+    <language>en-us</language>
+    <author>Chuck Ha</author>
+    <rights>Copyright (c) 2013, Chuck Ha; all rights reserved.</rights>
+    <updated>2013-12-03 00:00:00 &#43;0000 UTC</updated>
+    
+    <item>
+      <title>Odds In Our Favor</title>
+      <link>/portfolio/oddsinourfavor</link>
+      <pubDate>Tue, 03 Dec 2013 00:00:00 UTC</pubDate>
+      <author>Chuck Ha</author>
+      <guid>/portfolio/oddsinourfavor</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/static/img/portfolio/oiof_top.png&#34; alt=&#34;top of the website&#34; /&gt;
+
+&lt;img src=&#34;/static/img/portfolio/oiof_bottom.png&#34; alt=&#34;bottom of the website&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I worked with the &lt;a href=&#34;http://thehpalliance.org/&#34;&gt;Harry Potter Alliance&lt;/a&gt; to implement their vision of
+a website to help spread their message. I worked closely with their designer
+to get a working product that fulfilled their requirements. We discussed what
+exactly they wanted out of this product and I translated their needs into
+a site that was tailored specifically to them.&lt;/p&gt;
+
+&lt;p&gt;The part that you don&amp;rsquo;t see in the screen shots is the admin section. This
+was the most complicated piece of the application. Admins could verify that
+images were appropriate to be displayed on the front page. They were also
+able to delete images based off of a URL and generate CSV reports of users
+that had submitted content to the site.&lt;/p&gt;
+
+&lt;p&gt;This website was written entirely in &lt;a href=&#34;http://golang.org/&#34;&gt;Go&lt;/a&gt; and uses &lt;a href=&#34;http://mongodb.org/&#34;&gt;mongodb&lt;/a&gt; for a
+data store. The image processing is a custom thumbnail library I built and
+plan to release as an open source project.&lt;/p&gt;
+
+&lt;p&gt;At its peak, this site received almost 200,000 hits in a 12 hour period.
+Nothing huge, but that load will make any mistakes in the code very obvious.
+At first, the server was holding onto too many connections, but once I fixed
+that bug, there has been no downtime since. Average response times are about
+50ms and time to DOMLoaded (on my machine) is about 300ms.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
