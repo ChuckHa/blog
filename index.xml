@@ -9,6 +9,21 @@
     <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
     
     <item>
+      <title>Contributor to Gadget</title>
+      <link>/project/gadget</link>
+      <pubDate>Wed, 04 Dec 2013 00:00:00 UTC</pubDate>
+      <author>Chuck Ha</author>
+      <guid>/project/gadget</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/redneckbeard/gadget/&#34;&gt;Gadget&lt;/a&gt; is a Go framework that speeds up the creation of
+a RESTful API server. It does a lot more than that and can be used
+as a full fledged web-server, but I find the most use is building out
+tiny RESTful APIs.&lt;/p&gt;
+
+&lt;p&gt;Here is a list of &lt;a href=&#34;https://github.com/redneckbeard/gadget/commits?author=ChuckHa&#34;&gt;my contributions&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Odds In Our Favor</title>
       <link>/portfolio/oddsinourfavor</link>
       <pubDate>Tue, 03 Dec 2013 00:00:00 UTC</pubDate>
