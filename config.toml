@@ -1,4 +1,4 @@
-baseURL = "https://chuckha.com"
+baseURL = "https://chuckha.github.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Chuck Ha"
 theme = "cactus-plus"
