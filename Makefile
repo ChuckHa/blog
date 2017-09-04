@@ -13,6 +13,6 @@ publish:
 	$(GIT) push
 
 clean:
-	find public -not -path "*/.git*" -delete
+	find public -not -path "*/.git*" -not -path "*/Makefile" -delete
 
 rebuild: clean build
