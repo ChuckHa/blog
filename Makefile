@@ -8,6 +8,9 @@ build:
 
 publish:
 	$(MAKE) -C public
+	$(GIT) add public
+	$(GIT) commit -s -m 'Update submodule'
+	$(GIT) push
 
 clean:
 	find public -not -path "*/.git*" -delete
