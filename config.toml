@@ -2,3 +2,11 @@ baseURL = "https://chuckha.github.io/"
 languageCode = "en-us"
 title = "Chuck Ha"
 theme = "cactus-plus"
+googleAnalytics = "UA-108237892-1"
+
+[params]
+	enableGoogleAnalytics = true
+
+[social]
+  twitter = "https://twitter.com/chuck_ha"
+  github = "https://github.com/chuckha"
