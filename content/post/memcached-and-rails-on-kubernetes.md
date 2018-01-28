@@ -2,7 +2,6 @@
 title: "Kubernetes, Rails and Memcached"
 date: 2018-01-28T14:28:14-05:00
 tags: ["kubernetes", "rails", "memcached", "dalli"]
-draft: true
 ---
 
 I wanted to use a pool of memcached servers to back my [rails cache][rails-cache]. The [dalli wiki describes a Heroku setup][wiki] that uses environment variables to configure a list of memcached servers. This is exactly what I want when deploying to Kubernetes. Using environment variables allows me to avoid hardcoding the memcached host names into the application configuration code.
